@@ -1,0 +1,94 @@
+baseURL = "https://tinytech.blog/"
+languageCode = "en-gb"
+title = "TinyTech.blog_"
+theme = "lines"
+disableKinds = ["section", "categories"]
+disqusShortname = ""
+pygmentsCodeFences = false
+pygmentsUseClasses = false
+paginate = 999
+minify = true
+# enableGitInfo = true
+
+[taxonomies]
+  tag = "tags"
+  author = "authors"
+  category = "categories"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[Author]
+  name = "Dan Parkes"
+  email = "danj.parkes@gmail.com"
+  web = ""
+
+[params]
+  description = ""
+  author = "Dan Parkes"
+  copyright = "Dan Parkes"
+  logo = ""
+
+[frontmatter]
+  date  = [":filename", ":default"]
+  author = "Dan Parkes"
+  github = "hexnaught"
+  facebook = ""
+  og_image = ""
+  sitename = ""
+  twitter = ""
+  # date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
+
+[permalinks]
+  posts = "/:year/:month/:day/:filename"
+  pages = "/:slug"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name       = "Posts"
+    url        = "/"
+    weight     = -111
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = -20
+
+  [[menu.main]]
+    identifier = "rss"
+    name       = "RSS"
+    url        = "/atom.xml"
+    weight     = -10
