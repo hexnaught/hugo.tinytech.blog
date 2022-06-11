@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+{{ partial "head.html" . }}
+
+<body>
+  <main>
+    {{ partial "header.html" . }}
+
+    <section>
+      {{ if eq .Type "posts" }}
+      <h2 itemprop="name headline">{{ .Title }}</h2>
+      <p class="meta">
+
+        <time itemprop="datePublished" datetime="{{ dateFormat " 2006-01-02" .Date }}">{{ dateFormat "January 02, 2006" .Date }}</time> &bull;
+        {{ partial "tags.html" .}}
+        <br />
+
+        <span>Words: {{ countwords .Content }} | Characters: {{ countrunes .Content }} | Reading Time: {{ .ReadingTime }} minutes</span>
+        <br />
+
+        <span>Author:
+          {{ range .Param "authors" }}
+          {{ with .name }}
+            <span>{{ . }}</span> &bull;
+          {{ end }}
+          {{ with .website }}
+            <a target="_blank" href="{{ . }}">{{ . }}</a> &bull;
+          {{ end }}
+          {{ with .twitter }}
+            <a target="_blank" href="https://twitter.com/{{ . }}">@{{ . }}</a> &bull;
+          {{ end }}
+          {{ with .github }}
+            <a target="_blank" href="https://github.com/{{ . }}"><i class="fa-brands fa-github"></i> {{ . }}</a>
+          {{ end }}
+          {{ end }}</span>
+      </p>
+      {{ end }}
+
+      <span itemprop="articleBody">
+        {{ .Content }}
+      </span>
+
+    </section>
+
+    {{ partial "footer.html" . }}
+  </main>
+</body>
+
+</html>
