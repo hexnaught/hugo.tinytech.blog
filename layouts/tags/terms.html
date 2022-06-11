@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  {{ partial "head.html" . }}
+<body>
+  <main>
+    {{ partial "header.html" . }}
+    <section>
+      <ul class="tags-list">
+        {{ range .Site.Taxonomies.tags }}
+          <a href="{{ .Page.Permalink }}">
+            <li>
+              <span>{{ .Page.Title }}</span>
+              <hr />
+              <span style="float: right;">{{ .Count }}</span>
+            </li>
+          </a>
+        {{ end }}
+      </ul>
+    </section>
+
+    {{ partial "footer.html" . }}
+  </main>
+</body>
+</html>
