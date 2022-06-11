@@ -2,13 +2,13 @@ baseURL = "https://tinytech.blog/"
 languageCode = "en-gb"
 title = "TinyTech.blog_"
 theme = "lines"
-disableKinds = ["section", "categories"]
+# disableKinds = ["section", "categories"]
 disqusShortname = ""
 pygmentsCodeFences = false
 pygmentsUseClasses = false
 paginate = 999
 minify = true
-# enableGitInfo = true
+enableGitInfo = true
 
 [taxonomies]
   tag = "tags"
@@ -30,19 +30,19 @@ minify = true
     disable = true
 
 [Author]
-  name = "Dan Parkes"
-  email = "danj.parkes@gmail.com"
+  name = "Dan"
+  email = ""
   web = ""
 
 [params]
   description = ""
-  author = "Dan Parkes"
-  copyright = "Dan Parkes"
+  author = "Dan"
+  copyright = "Dan"
   logo = ""
 
 [frontmatter]
   date  = [":filename", ":default"]
-  author = "Dan Parkes"
+  author = "Dan"
   github = "hexnaught"
   facebook = ""
   og_image = ""
@@ -54,8 +54,10 @@ minify = true
   expiryDate = ["expiryDate"]
 
 [permalinks]
-  posts = "/:year/:month/:day/:filename"
+  posts = "/posts/:year/:month/:day/:filename"
   pages = "/:slug"
+  news = "/news/:slug"
+  tags = "/tags/:slug"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -85,10 +87,22 @@ minify = true
     identifier = "about"
     name       = "About"
     url        = "/about/"
-    weight     = -20
+    weight     = -50
+
+  [[menu.main]]
+    identifier = "news"
+    name       = "News"
+    url        = "/news/"
+    weight     = -25
+
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = -10
 
   [[menu.main]]
     identifier = "rss"
     name       = "RSS"
     url        = "/atom.xml"
-    weight     = -10
+    weight     = -5
