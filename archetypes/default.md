@@ -11,4 +11,5 @@ authors:
       website: ""
       twitter: ""
       github: "hexnaught"
+      linkedin:
 ---
