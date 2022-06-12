@@ -30,19 +30,19 @@ enableGitInfo = true
     disable = true
 
 [Author]
-  name = "Dan"
+  name = "Dan Parkes"
   email = ""
   web = ""
 
 [params]
   description = ""
-  author = "Dan"
-  copyright = "Dan"
+  author = "Dan Parkes"
+  copyright = "Dan Parkes"
   logo = ""
 
 [frontmatter]
   date  = [":filename", ":default"]
-  author = "Dan"
+  author = "Dan Parkes"
   github = "hexnaught"
   facebook = ""
   og_image = ""
