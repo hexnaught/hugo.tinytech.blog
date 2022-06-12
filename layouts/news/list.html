@@ -13,6 +13,7 @@
             <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
               <span>{{ .Title }}</span>
               <hr>
+              <span class="content-len">{{ .ReadingTime }} minute read</span>
               <time datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>
             </li>
           </a>
