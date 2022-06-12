@@ -5,16 +5,11 @@ draft: false
 
 # Welcome to TinyTech.blog !
 
-## About:
-
-- What is this?
-- Buh-Whyy ?
-- But I like all the infos!
-- Can I help/contribute?!
-
 ### What is this?
 
 A blog with a focus on short but sweet, accurate, small or single purpose functional posts. All content is to be 'to the point' and shouldn't be taking more than a minute or two to read/filter through. In fact... This page is likely to be the longest post on here!
+
+With that said though, a few longer posts may creep in here with an appropriate tag - all posts will also have a rough reading length attributed to them though so you can judge the length based on that!
 
 ### Buh-Whyy ?
 
@@ -34,8 +29,10 @@ Sometimes when looking for the answer, we don't want to know the history of bash
 
 ### Can I help/contribute?!
 
-YES YOU CAN! There are going to be some guidelines (I don't like the term 'rules' as there can always be some exceptions) to creating a post for the blog that you can submit, along with some 'author' information/metadata unless you want to put a post forward anonymously.
+YES! You can! There are going to be some guidelines (I don't like the term 'rules' as there can always be some exceptions) to creating a post for the blog that you can submit, along with some 'author' information/metadata unless you want to put a post forward anonymously.
 
 The post will be reviewed with edits or changes requested and if not submitted anonymously we can have a little feedback-loop to ensure the point of the post is not lost.
 
 Then if accepted, we can publish it to a date/time of your liking (or right away!).
+
+*Keep an eye out for these guidelines and a submission form coming soonTM.*
