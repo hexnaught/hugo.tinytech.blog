@@ -1,7 +1,7 @@
 ---
 title: "Get a WSL Distro IP Address"
-date: 2022-08-13T11:14:05+01:00
-publishDate: 2022-08-13T12:00:00+01:00
+date: 2022-08-13T10:14:05+01:00
+publishDate: 2022-08-13T11:00:00+01:00
 description: Get the IP address of a WSL (Windows Subsystem for Linux) distribution via powershell.
 draft: false
 tags:
