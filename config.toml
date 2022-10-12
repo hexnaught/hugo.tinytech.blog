@@ -9,6 +9,7 @@ pygmentsUseClasses = false
 paginate = 999
 minify = true
 enableGitInfo = true
+googleAnalytics = 'G-WQZMS90BPL'
 
 [taxonomies]
   tag = "tags"
@@ -19,7 +20,7 @@ enableGitInfo = true
   [privacy.disqus]
     disable = true
   [privacy.googleAnalytics]
-    disable = true
+    disable = false
   [privacy.instagram]
     disable = true
   [privacy.twitter]
