@@ -16,28 +16,37 @@ tags:
 
 If the default distro is not running, this will start the default distro and return the IP once running.
 
-```ps1
-> wsl hostname -I
+{{< highlight "linenos=false" >}}
+PS> wsl hostname -I
 192.168.78.100
-```
+{{< /highlight >}}
 
 ### Get the IP address for a non-default distribution
 
 List all of the running WSL distributions (omit `--running` flag to list all, regardless of state).
 
-```ps1
-> wsl -l --running
+{{< highlight "linenos=false" >}}
+PS> wsl -l --running
 Windows Subsystem for Linux Distributions:
 Ubuntu (Default)
 Arch
-```
+{{< /highlight >}}
 
 Get the IP for the specific distribution with `wsl -d <distro> hostname -I`.
 
-```ps1
-> wsl -d Ubuntu hostname -I
+{{< highlight "linenos=false" >}}
+PS> wsl -d "Ubuntu" hostname -I
 192.168.78.100
 
-> wsl -d Arch hostname -I
+PS> wsl -d "Arch" hostname -I
 192.168.78.110
-```
+{{< / highlight >}}
+
+
+{{< highlight "linenos=false" >}}
+PS> wsl -d "Ubuntu" hostname -I
+192.168.78.100
+
+PS> wsl -d "Arch" hostname -I
+192.168.78.110
+{{< / highlight >}}
