@@ -41,12 +41,3 @@ PS> wsl -d "Ubuntu" hostname -I
 PS> wsl -d "Arch" hostname -I
 192.168.78.110
 {{< / highlight >}}
-
-
-{{< highlight "linenos=false" >}}
-PS> wsl -d "Ubuntu" hostname -I
-192.168.78.100
-
-PS> wsl -d "Arch" hostname -I
-192.168.78.110
-{{< / highlight >}}
